@@ -1,0 +1,96 @@
+h3{
+color: white;
+padding-bottom: 20px;
+}
+
+.brands{
+  /* padding: 3% 5%; */
+  margin: 60px;
+  border-radius: 100%;
+  /* border: 1px solid black; */
+  height: 200px;
+  box-shadow: -1px 2px 30px -7px rgba(0,0,0,1);
+  width: 200px;
+  
+}
+.brands:hover{
+  box-shadow: none
+}
+.card{
+  background-color: #ada065;
+}
+
+.form-control{
+  background-color: #ada065;
+  border-color: #7a7978;
+}
+.formerror{
+  color: orange;
+}
+
+
+.footer{
+  position:static;
+  bottom: 0;
+  text-align: center;
+  margin-top: 5%;
+  height: 0px;
+  width: 100%;
+  background-color: #a38b1e;
+
+}
+.footer p {
+	padding-top: 25px;
+	font-size: 12px;
+  color: white;
+}
+.homecontainer {
+  margin: 10% auto;
+  /* padding: 80px 0; */
+  text-align: center;
+}
+
+.homeproducts{
+  text-align: center;
+  border-radius:10px;
+  width:80%;
+  min-height: 300px;
+  margin:5% 10%;
+  padding-bottom: 30px;
+  /* background-color: #DAE0E2; */
+}
+.home{
+  background-color:#a38b1e ;
+  text-align: center;
+}
+.home a{
+  color:white ;
+  text-decoration-line: none;
+}
+.homebtn{
+  appearance: none;
+  outline: 0;
+  background-color: #ada065;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 3px;
+  width: 100px;
+  font-size: 18px;
+}
+.homebtn:hover{
+  background-color:#a38b1e ;
+}
+
+.icons{
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 3px;
+}
+
+.pageitem:hover{
+  background-color: white;
+}
+.product-img{
+
+  width: 300px;
+}

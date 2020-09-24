@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>crab-crab:the e-commerce web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/social-buttions.css">
+  </head>
+  <body style="background-color: #ada065;">
+
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+<h1 class="navbar-brand">Amazon</h1>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="/login">Login<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/signup">Sign Up</a>
+    </li>
+  </ul>
+  <form class="form-inline mt-2 mt-md-0 " onsubmit="return validatePassword()">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+
+</div>
+</nav> -->
+
+
+<div class="container mt-5">
+  <h1>Sign Up</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/signup" method="POST" onsubmit="return validatePassword()">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" style="background-color:#ada065;" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" style="background-color:#ada065;" class="form-control" name="password">
+              <span id="message" style="color:#e41833;"></span>
+            </div>
+            <button type="submit" class="btn btn-dark">Sign Up</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card social-block">
+        <div class="card-body">
+          <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+            <i class="fab fa-google fa-yellow"></i>
+            Sign Up with Google
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="index.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <div class="footer" style="position:fixed;bottom:0;height: 100px;">
+    <p>Made with ❤️ by JB Rayansh</p>
+  </div>
+
+
+  </body>
+</html>
