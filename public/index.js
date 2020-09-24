@@ -1,22 +1,23 @@
 
 function validatePassword() {
   var p=document.getElementById("password").value;
+  console.log(p);
     if (p.length < 6) {
         var v1="Your password must contain at least 6 characters";
         document.getElementById("message").innerHTML=v1;
        return false;
     }
-    if (p.search(/[a-z]/i) <= 0) {
-        var v1="Your password must contain at least one letter.";
+    if (p.search(/[a-z]/g) < 0) {
+        var v1="Your password must contain at least one alphabet.";
         document.getElementById("message").innerHTML=v1;
        return false;
     }
-    if (p.search(/[0-9]/) <= 0) {
+    if (p.search(/[0-9]/g) < 0) {
         var v1="Your password must contain at least one digit.";
         document.getElementById("message").innerHTML=v1;
        return false;
     }
-    if(p.search(/[!@#$%^&*]/)<=0){
+    if(p.search(/[!@#$%^&*]/g)< 0){
     var v1="Your password must contain at least one special character.";
       document.getElementById("message").innerHTML=v1;
      return false;
